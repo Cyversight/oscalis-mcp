@@ -39,15 +39,30 @@ macOS users can also run `brew install uv`. Open a new terminal afterwards so `u
 uv tool install git+https://github.com/Cyversight/oscalis-mcp
 ```
 
-This puts the `oscalis-mcp` command on your PATH. Update later with `uv tool upgrade oscalis-mcp`.
+This puts the `oscalis-mcp` command in uv's tool folder. If `oscalis-mcp --help` is not found afterwards, run
+`uv tool update-shell` and open a new terminal. Update later with `uv tool upgrade oscalis-mcp`.
 
-**3. Add it to your MCP client.** If you installed the command in step 2:
+**3. Add it to your MCP client.** Use the command's full path. Some clients, including Kiro on Windows, do not find a
+bare command name, or use a PATH from before the install. `uv tool dir --bin` prints the folder:
+
+| System | Usual path |
+|--------|-----------|
+| Windows | `C:\Users\<you>\.local\bin\oscalis-mcp.exe` |
+| Linux and macOS | `/home/<you>/.local/bin/oscalis-mcp` (macOS: `/Users/<you>/.local/bin/oscalis-mcp`) |
 
 ```json
-{ "mcpServers": { "oscalis": { "command": "oscalis-mcp" } } }
+{
+  "mcpServers": {
+    "oscalis": { "command": "C:\\Users\\<you>\\.local\\bin\\oscalis-mcp.exe" }
+  }
+}
 ```
 
-Or skip step 2 and let the client run it through `uvx`, which downloads and caches it on first use:
+In JSON, Windows backslashes are written twice. If your client does find commands on PATH, `"command": "oscalis-mcp"`
+also works.
+
+Or skip step 2 and let the client run it through `uvx`, which downloads and caches it on first use. The same advice
+applies: if the client cannot find `uvx`, give its full path (`where uvx` on Windows, `which uvx` elsewhere):
 
 ```json
 {
