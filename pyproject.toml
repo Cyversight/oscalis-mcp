@@ -41,6 +41,7 @@ oscalis-mcp = "oscalis.server:main"
 Homepage = "https://github.com/Cyversight/oscalis-mcp"
 Repository = "https://github.com/Cyversight/oscalis-mcp"
 Issues = "https://github.com/Cyversight/oscalis-mcp/issues"
+Cyversight = "https://cyversight.com"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/oscalis"]

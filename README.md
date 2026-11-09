@@ -340,7 +340,8 @@ when the `python` on PATH lacks the dependencies.
 ## License
 
 Copyright 2026 Cyversight LLC. The code, tests, scripts, documentation and the hand-authored AI RMF crosswalk are
-licensed under the [Apache License, Version 2.0](LICENSE). Created and maintained by Al Lyle at Cyversight LLC.
+licensed under the [Apache License, Version 2.0](LICENSE). Created and maintained by Al Lyle at
+[Cyversight LLC](https://cyversight.com).
 
 The bundled NIST, FedRAMP and GovRAMP data is third-party material and is not covered by that license. [NOTICE](NOTICE)
 lists each file group, its source and its terms. In particular, GovRAMP-authored text in
