@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "uuid": "77c819dc-a616-5b93-b050-0f998b153620",
+    "metadata": {
+      "title": "FedRAMP Rev. 5 Moderate baseline (seed excerpt; parameter values are illustrative)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "5.2.0-seed",
+      "oscal-version": "1.1.3",
+      "remarks": "SEED DATA: abbreviated paraphrase for offline development and tests, not the official text. Run src/scripts/ingest_catalogs.py to replace with the published OSCAL content. Parameter values below are placeholders, not FedRAMP requirements."
+    },
+    "imports": [
+      {
+        "href": "800-53b-moderate.json",
+        "include-all": {}
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "set-parameters": [
+        {
+          "param-id": "ac-02_odp.03",
+          "constraints": [
+            {
+              "description": "illustrative: twenty-four (24) hours"
+            }
+          ]
+        },
+        {
+          "param-id": "au-02_odp.01",
+          "constraints": [
+            {
+              "description": "illustrative: successful and unsuccessful account logon events"
+            }
+          ]
+        },
+        {
+          "param-id": "ra-03_odp.01",
+          "values": [
+            "illustrative: at least annually"
+          ]
+        }
+      ]
+    }
+  }
+}

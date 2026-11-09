@@ -1,0 +1,288 @@
+{
+  "files": [
+    {
+      "path": "catalogs/800-53r5.2.json",
+      "key": "800-53r5.2",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+      "sha256": "64ca6b4161de51ab6af098a7d101d326f14c95e1abf721396cd8a049e8115eeb",
+      "bytes": 10448237,
+      "retrieved": "2026-11-04",
+      "title": "Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures",
+      "version": "5.2.0",
+      "oscal-version": "1.2.3"
+    },
+    {
+      "path": "catalogs/ai-rmf.json",
+      "key": "ai-rmf",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/AI100-1/ver1/json/NIST_AI-RMF_v1_catalog.json",
+      "sha256": "09de09ecd15f861c4ec05aa192872dc2faafc3bef41c4bc57e19247e84f92545",
+      "bytes": 758939,
+      "retrieved": "2026-11-04",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "version": "1.0.0",
+      "oscal-version": "v1.2.3"
+    },
+    {
+      "path": "catalogs/csf-v2.json",
+      "key": "csf-v2",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/CSF/v2.0/json/NIST_CSF_v2.0_catalog.json",
+      "sha256": "0ac12904a4bcd877ec91be8e7ddc27278c88b0088c7db77d60ee24918e2563e2",
+      "bytes": 341930,
+      "retrieved": "2026-11-04",
+      "title": "Electronic Version of NIST Cybersecurity Framework 2.0",
+      "version": "1.2.1",
+      "oscal-version": "v1.2.3"
+    },
+    {
+      "path": "profiles/800-53b-high.json",
+      "key": "800-53b-high",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_HIGH-baseline_profile.json",
+      "sha256": "d2ef340986b9f1ee820ad866a0f964d9a9d1088b24080c74b795ddb0148b9f83",
+      "bytes": 12492,
+      "retrieved": "2026-11-04",
+      "title": "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.1.1 HIGH IMPACT BASELINE",
+      "version": "5.2.0",
+      "oscal-version": "1.2.3"
+    },
+    {
+      "path": "profiles/800-53b-low.json",
+      "key": "800-53b-low",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_LOW-baseline_profile.json",
+      "sha256": "cfd4f5d9a192eb42dc04b745d82f95a85926a2a85a45418034a380a42bda9424",
+      "bytes": 7234,
+      "retrieved": "2026-11-04",
+      "title": "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 LOW IMPACT BASELINE",
+      "version": "5.2.0",
+      "oscal-version": "1.2.3"
+    },
+    {
+      "path": "profiles/800-53b-moderate.json",
+      "key": "800-53b-moderate",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json",
+      "sha256": "e3a0f11237cfaac24dfcf1586e07683f17423757fd84208deb33196b12e8f590",
+      "bytes": 10498,
+      "retrieved": "2026-11-04",
+      "title": "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 MODERATE IMPACT BASELINE",
+      "version": "5.2.0",
+      "oscal-version": "1.2.3"
+    },
+    {
+      "path": "profiles/800-53b-privacy.json",
+      "key": "800-53b-privacy",
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_PRIVACY-baseline_profile.json",
+      "sha256": "c0e3d54d9f474bc6c33338a8e524bc52ad070f94f9274db7ec48242242fecacc",
+      "bytes": 6064,
+      "retrieved": "2026-11-04",
+      "title": "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE",
+      "version": "5.2.0",
+      "oscal-version": "1.2.3"
+    },
+    {
+      "path": "profiles/fedramp-high.json",
+      "key": "fedramp-high",
+      "url": "https://raw.githubusercontent.com/oscal-compass-lab/fedramp-automation/main/dist/content/rev5/baselines/json/FedRAMP_rev5_HIGH-baseline_profile.json",
+      "sha256": "cce692728b57fae69b25860aba7116426a3637d5b01eb02cd23b13c4eff868f4",
+      "bytes": 1372670,
+      "retrieved": "2026-11-04",
+      "title": "FedRAMP Rev 5 High Baseline",
+      "version": "fedramp2.1.0-oscal1.0.4",
+      "oscal-version": "1.0.4"
+    },
+    {
+      "path": "profiles/fedramp-low.json",
+      "key": "fedramp-low",
+      "url": "https://raw.githubusercontent.com/oscal-compass-lab/fedramp-automation/main/dist/content/rev5/baselines/json/FedRAMP_rev5_LOW-baseline_profile.json",
+      "sha256": "b13459be3665380b559f10c500310668ce12c2ef71b3c8be997509659988265e",
+      "bytes": 794948,
+      "retrieved": "2026-11-04",
+      "title": "FedRAMP Rev 5 Low Baseline",
+      "version": "fedramp2.1.0-oscal1.0.4",
+      "oscal-version": "1.0.4"
+    },
+    {
+      "path": "profiles/fedramp-moderate.json",
+      "key": "fedramp-moderate",
+      "url": "https://raw.githubusercontent.com/oscal-compass-lab/fedramp-automation/main/dist/content/rev5/baselines/json/FedRAMP_rev5_MODERATE-baseline_profile.json",
+      "sha256": "5db32cd3c31c3450c03168edd3db26641324c15971edf52163d2310ccdaa925f",
+      "bytes": 1204545,
+      "retrieved": "2026-11-04",
+      "title": "FedRAMP Rev 5 Moderate Baseline",
+      "version": "fedramp2.1.0-oscal1.0.4",
+      "oscal-version": "1.0.4"
+    },
+    {
+      "path": "schemas/oscal_catalog_schema.json",
+      "key": "oscal_catalog_schema",
+      "url": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.3/oscal_catalog_schema.json",
+      "sha256": "5e120afbd14c480a9498ab6388857ef32b3b880e458525e966ff7c7f59333d90",
+      "bytes": 45375,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "path": "schemas/oscal_profile_schema.json",
+      "key": "oscal_profile_schema",
+      "url": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.3/oscal_profile_schema.json",
+      "sha256": "d14c99b4bc48cb1ef370cd27a78c23e04bab847e737e11f478b37714db30851b",
+      "bytes": 56434,
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "generated": [
+    {
+      "path": "crosswalks/csf-v2__800-53r5.2.json",
+      "key": "csf-v2__800-53r5.2",
+      "generator": "src/scripts/import_csf_crosswalk.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "https://csrc.nist.gov/extensions/nudp/services/json/csf/download?olirids=all",
+          "sha256": "9496e6cb486c3e876d29336798eff1a9836341fba905d95388ba1c3deb39edd8"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-low.json",
+      "key": "govramp-low",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 Low Impact/GovRAMP_Low-Impact-SP-Package/Low-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Low_Rev5_V1.05.xlsx",
+          "sha256": "ea185370cb457dbcfa6be022af505b2b1bfa1ee092bcd376c7ce43785f2e3074"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-moderate.json",
+      "key": "govramp-moderate",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx",
+          "sha256": "787c801f7dc593da33ece573cc8e9abf2179d98283f4592fa5bf85586e7eba49"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-high.json",
+      "key": "govramp-high",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 High Impact/High Impact SP Package/1_OCM/GovRAMP-Controls-Matrix_High_Rev5_V1.0.xlsx",
+          "sha256": "30059c670a2d80b3c49e3575d57f7d15299846aac9b4a5133c5d15ea062cddd2"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-core.json",
+      "key": "govramp-core",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx",
+          "sha256": "787c801f7dc593da33ece573cc8e9abf2179d98283f4592fa5bf85586e7eba49"
+        },
+        {
+          "file": "GovRAMP Core Controls.xlsx",
+          "sha256": "da898538b9c198a373c50ad339cefab42fdd3899bfc9fe2dd0de0ddcd4c51960"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-ready-low.json",
+      "key": "govramp-ready-low",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 Low Impact/GovRAMP_Low-Impact-SP-Package/Low-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Low_Rev5_V1.05.xlsx",
+          "sha256": "ea185370cb457dbcfa6be022af505b2b1bfa1ee092bcd376c7ce43785f2e3074"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-ready-moderate.json",
+      "key": "govramp-ready-moderate",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx",
+          "sha256": "787c801f7dc593da33ece573cc8e9abf2179d98283f4592fa5bf85586e7eba49"
+        },
+        {
+          "file": "GovRAMP Ready Minimum Mandatory Requirements for Moderate and High Impact Levels.xlsx",
+          "sha256": "94076cb17bd58870881bc039385b7a2f6ccc12419d2d5be3e9e902b12725a6af"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-ready-high.json",
+      "key": "govramp-ready-high",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 High Impact/High Impact SP Package/1_OCM/GovRAMP-Controls-Matrix_High_Rev5_V1.0.xlsx",
+          "sha256": "30059c670a2d80b3c49e3575d57f7d15299846aac9b4a5133c5d15ea062cddd2"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-moderate-cjis.json",
+      "key": "govramp-moderate-cjis",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Service Provider Package \u2013 Moderate Impact with CJIS Overlay/Moderate Impact SP Package-CJIS/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.11_01302026_CJIS.xlsx",
+          "sha256": "2991324440063585fb34cab70d235006bca7bd934ccd1e91c5dcde4146fa8913"
+        },
+        {
+          "file": "GovRAMP CJIS-Aligned Overlay Control and Parameters.xlsx",
+          "sha256": "8f4890637ea20fec416da46adddfe077d752cbb4e2d8adc145564bab6a7b4acd"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-low-federal.json",
+      "key": "govramp-low-federal",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Federal Overlay.xlsx",
+          "sha256": "c0823d60970acb0ae69121211069ba89f293ec377a1647e7bee1e15a9fe04196"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-moderate-federal.json",
+      "key": "govramp-moderate-federal",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Federal Overlay.xlsx",
+          "sha256": "c0823d60970acb0ae69121211069ba89f293ec377a1647e7bee1e15a9fe04196"
+        }
+      ]
+    },
+    {
+      "path": "profiles/govramp-high-federal.json",
+      "key": "govramp-high-federal",
+      "generator": "src/scripts/import_govramp.py",
+      "generated": "2026-11-04",
+      "sources": [
+        {
+          "file": "GovRAMP Federal Overlay.xlsx",
+          "sha256": "c0823d60970acb0ae69121211069ba89f293ec377a1647e7bee1e15a9fe04196"
+        }
+      ]
+    }
+  ]
+}

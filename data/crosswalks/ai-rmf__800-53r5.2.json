@@ -1,0 +1,143 @@
+{
+  "mapping-collection": {
+    "uuid": "60c32f4c-c8cb-5633-9600-a11fc0f8eb55",
+    "metadata": {
+      "title": "NIST AI RMF 1.0 to SP 800-53 Rev 5.2 (analyst-authored, illustrative)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.3",
+      "remarks": "ANALYST-AUTHORED. NIST publishes no AI RMF to SP 800-53 mapping, so these edges are an Oscalis author's judgement, not a published crosswalk. They are limited to a few illustrative links and labelled advisory/intersecting. Do not rely on them as evidence; replace them if NIST or another authority publishes a mapping."
+    },
+    "mappings": [
+      {
+        "uuid": "c1fac49a-4a53-5cd2-8da0-231995f3e82c",
+        "source-resource": {
+          "catalog": "ai-rmf"
+        },
+        "target-resource": {
+          "catalog": "800-53r5.2"
+        },
+        "provenance": {
+          "document": "Oscalis analyst-authored mapping (no published source exists)",
+          "version": "0.2.0"
+        },
+        "maps": [
+          {
+            "uuid": "12c824b7-8de2-5d80-bf5f-3e15ed604dc9",
+            "relationship": "crosswalk:related",
+            "method": "intersecting",
+            "confidence": 0.6,
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "measure_2.7"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              }
+            ],
+            "remarks": "Analyst-authored; no published source. Treat as a lead, not as compliance evidence."
+          },
+          {
+            "uuid": "36864680-51e2-513d-8d7c-15e088a74d8a",
+            "relationship": "crosswalk:related",
+            "method": "intersecting",
+            "confidence": 0.5,
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "measure_2.7"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              }
+            ],
+            "remarks": "Analyst-authored; no published source. Treat as a lead, not as compliance evidence."
+          },
+          {
+            "uuid": "35e12c60-e0a1-5c70-b919-745de528349e",
+            "relationship": "crosswalk:related",
+            "method": "intersecting",
+            "confidence": 0.6,
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "map_1.1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              }
+            ],
+            "remarks": "Analyst-authored; no published source. Treat as a lead, not as compliance evidence."
+          },
+          {
+            "uuid": "e249c8a5-be4e-5f67-bfc2-c44b87d7590b",
+            "relationship": "crosswalk:related",
+            "method": "advisory",
+            "confidence": 0.3,
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "govern_2.1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              }
+            ],
+            "remarks": "Analyst-authored; no published source. Treat as a lead, not as compliance evidence."
+          },
+          {
+            "uuid": "dee5291c-c9b9-5a22-91f0-53308779c9ac",
+            "relationship": "crosswalk:related",
+            "method": "advisory",
+            "confidence": 0.3,
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "govern_1.2"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              }
+            ],
+            "remarks": "Analyst-authored; no published source. Treat as a lead, not as compliance evidence."
+          },
+          {
+            "uuid": "ba82d085-e103-5476-a21c-da41509edf13",
+            "relationship": "crosswalk:related",
+            "method": "advisory",
+            "confidence": 0.3,
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "manage_1.1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              }
+            ],
+            "remarks": "Analyst-authored; no published source. Treat as a lead, not as compliance evidence."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+# Virtualenvs, including per-platform copies such as .venv-windows
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Optional file-backed index
+*.sqlite
+*.db
+
+# Upstream OSCAL JSON schemas fetched on demand
+data/schemas/
+
+# Local files that are not part of the project (editor settings, hooks and steering, the original brief)
+.kiro/
+oscalis.md
+AI_HANDOFF.md

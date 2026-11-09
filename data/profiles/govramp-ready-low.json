@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "uuid": "56c24272-8c13-5fca-9b66-a8c1d4c9f33d",
+    "metadata": {
+      "title": "GovRAMP Ready status, Low (minimum mandatory controls)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "matrix-v5",
+      "oscal-version": "1.1.3",
+      "remarks": "Subset of govramp-low flagged 'Required for Ready'. Parameters and requirements are inherited."
+    },
+    "imports": [
+      {
+        "href": "govramp-low.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-2",
+              "au-11",
+              "au-9",
+              "cm-11",
+              "cm-2",
+              "cm-4",
+              "cm-5",
+              "cm-6",
+              "cm-8",
+              "cp-10",
+              "cp-2",
+              "cp-9",
+              "ia-2",
+              "ia-2.1",
+              "ia-4",
+              "ir-8",
+              "pe-2",
+              "pe-3",
+              "pe-6",
+              "pe-8",
+              "ra-5",
+              "sc-12",
+              "sc-13",
+              "sc-20",
+              "sc-21",
+              "sc-28",
+              "sc-7",
+              "si-3",
+              "si-4"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "uuid": "69b48833-3e58-5bc1-9c84-482b086ac3b2",
+    "metadata": {
+      "title": "NIST SP 800-53B Low baseline (seed excerpt)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "5.2.0-seed",
+      "oscal-version": "1.1.3",
+      "remarks": "SEED DATA: abbreviated paraphrase for offline development and tests, not the official text. Run src/scripts/ingest_catalogs.py to replace with the published OSCAL content."
+    },
+    "imports": [
+      {
+        "href": "../catalogs/800-53r5.2.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "au-2",
+              "ia-2",
+              "ia-2.1",
+              "ra-3",
+              "sc-7"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

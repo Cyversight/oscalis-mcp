@@ -1,0 +1,16 @@
+#!/bin/sh
+# Git pre-commit hook. Enable once per clone:  git config core.hooksPath .githooks
+#
+# The checks live in checks/git-pre-commit.py so they behave the same on Windows, Linux and macOS. This wrapper
+# only finds a Python and runs it. Plain POSIX sh: git runs hooks with its own sh on every system, including the one
+# bundled with Git for Windows, so nothing else needs to be installed.
+
+cd "$(dirname "$0")/.." || exit 1
+
+for py in .venv/bin/python .venv/Scripts/python.exe; do
+  if [ -x "$py" ]; then exec "$py" checks/git-pre-commit.py "$@"; fi
+done
+
+# On Windows `python3` is often the Microsoft Store alias, which is on PATH but only prints an install prompt.
+if python3 -c '' >/dev/null 2>&1; then exec python3 checks/git-pre-commit.py "$@"; fi
+exec python checks/git-pre-commit.py "$@"

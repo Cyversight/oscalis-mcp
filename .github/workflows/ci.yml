@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }}, Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.11", "3.14"]
+    # bash on every runner (Git Bash on Windows). Windows' default shell, pwsh, only checks the exit code of the last
+    # command in a step, so a failing `ruff check` followed by a passing `ruff format --check` would pass the step.
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Private files must not be tracked
+        shell: bash
+        run: |
+          if git ls-files --error-unmatch AI_HANDOFF.md >/dev/null 2>&1; then
+            echo "AI_HANDOFF.md is private and must not be in the repository" >&2
+            exit 1
+          fi
+
+      - uses: astral-sh/setup-uv@v10.3.3
+
+      - name: Install dependencies
+        run: uv sync --locked --extra dev --python ${{ matrix.python }}
+
+      - name: Lint
+        run: |
+          uv run ruff check src tests checks
+          uv run ruff format --check src tests checks
+
+      - name: Type check
+        run: uv run mypy --strict
+
+      - name: Tests
+        run: uv run pytest -q
+
+      - name: Validate data files
+        run: |
+          uv run python checks/validate-oscal-schemas.py
+          uv run python checks/verify-crosswalk-integrity.py
+
+      - name: Quality-gate script
+        if: matrix.python == '3.11'
+        run: uv run python checks/pre-tool-eval.py --fast
+
+      - name: Git hook wrapper is POSIX sh
+        run: sh -n .githooks/pre-commit
+
+      # The real install path: build the wheel, install it as a tool, then talk to the installed command from an
+      # empty directory. This fails if the data files are not packaged or the console script is broken.
+      - name: Build wheel
+        shell: bash
+        run: uv build --wheel --out-dir dist
+
+      - name: Install the wheel as a command
+        shell: bash
+        run: |
+          uv tool install --force --python ${{ matrix.python }} dist/*.whl
+          echo "$(uv tool dir --bin)" >> "$GITHUB_PATH"
+
+      - name: Smoke test the installed command
+        run: uv run python src/scripts/smoke_installed.py

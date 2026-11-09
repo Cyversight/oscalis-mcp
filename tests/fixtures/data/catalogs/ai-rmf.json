@@ -1,0 +1,143 @@
+{
+  "catalog": {
+    "uuid": "b6b444d7-1517-5e04-b0f0-4ce143a57ed9",
+    "metadata": {
+      "title": "NIST AI Risk Management Framework 1.0 (seed excerpt)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "1.0-seed",
+      "oscal-version": "1.1.3",
+      "remarks": "SEED DATA: abbreviated paraphrase for offline development and tests, not the official text. Run src/scripts/ingest_catalogs.py to replace with the published OSCAL content."
+    },
+    "groups": [
+      {
+        "id": "GOVERN",
+        "class": "function",
+        "title": "GOVERN",
+        "controls": [
+          {
+            "id": "GOVERN_1",
+            "title": "GOVERN 1",
+            "class": "category",
+            "controls": [
+              {
+                "id": "GOVERN_1.1",
+                "title": "GOVERN 1.1",
+                "parts": [
+                  {
+                    "id": "GOVERN_1.1_smt",
+                    "name": "statement",
+                    "prose": "Legal and regulatory requirements involving AI are understood, managed, and documented."
+                  }
+                ]
+              },
+              {
+                "id": "GOVERN_1.2",
+                "title": "GOVERN 1.2",
+                "parts": [
+                  {
+                    "id": "GOVERN_1.2_smt",
+                    "name": "statement",
+                    "prose": "Characteristics of trustworthy AI are integrated into organizational policies, processes, and practices."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "GOVERN_2",
+            "title": "GOVERN 2",
+            "class": "category",
+            "controls": [
+              {
+                "id": "GOVERN_2.1",
+                "title": "GOVERN 2.1",
+                "parts": [
+                  {
+                    "id": "GOVERN_2.1_smt",
+                    "name": "statement",
+                    "prose": "Roles, responsibilities, and lines of communication for managing AI risks are documented and clear."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MAP",
+        "class": "function",
+        "title": "MAP",
+        "controls": [
+          {
+            "id": "MAP_1",
+            "title": "MAP 1",
+            "class": "category",
+            "controls": [
+              {
+                "id": "MAP_1.1",
+                "title": "MAP 1.1",
+                "parts": [
+                  {
+                    "id": "MAP_1.1_smt",
+                    "name": "statement",
+                    "prose": "Intended purposes, beneficial uses, context-specific laws, and deployment settings of the AI system are understood and documented."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MEASURE",
+        "class": "function",
+        "title": "MEASURE",
+        "controls": [
+          {
+            "id": "MEASURE_2",
+            "title": "MEASURE 2",
+            "class": "category",
+            "controls": [
+              {
+                "id": "MEASURE_2.7",
+                "title": "MEASURE 2.7",
+                "parts": [
+                  {
+                    "id": "MEASURE_2.7_smt",
+                    "name": "statement",
+                    "prose": "AI system security and resilience, as identified in the MAP function, are evaluated and documented."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MANAGE",
+        "class": "function",
+        "title": "MANAGE",
+        "controls": [
+          {
+            "id": "MANAGE_1",
+            "title": "MANAGE 1",
+            "class": "category",
+            "controls": [
+              {
+                "id": "MANAGE_1.1",
+                "title": "MANAGE 1.1",
+                "parts": [
+                  {
+                    "id": "MANAGE_1.1_smt",
+                    "name": "statement",
+                    "prose": "A determination is made whether the AI system achieves its intended purpose and whether development or deployment should proceed."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

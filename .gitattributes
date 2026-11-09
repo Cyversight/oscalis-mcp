@@ -1,0 +1,10 @@
+# Keep line endings identical on Windows, Linux and macOS.
+* text=auto
+
+# Scripts run by sh or git must have LF endings, or the shebang line breaks on Linux and macOS.
+*.sh text eol=lf
+.githooks/* text eol=lf
+
+# Data files are hashed in data/sources.lock.json. Never rewrite their bytes.
+data/** -text
+reports/** -text

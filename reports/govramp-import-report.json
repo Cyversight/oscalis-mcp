@@ -1,0 +1,776 @@
+{
+  "sources": [
+    {
+      "role": "low matrix",
+      "file": "GovRAMP Service Provider Package – Low Impact/GovRAMP_Low-Impact-SP-Package/Low-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Low_Rev5_V1.05.xlsx",
+      "sha256": "ea185370cb457dbcfa6be022af505b2b1bfa1ee092bcd376c7ce43785f2e3074"
+    },
+    {
+      "role": "moderate matrix",
+      "file": "GovRAMP Service Provider Package – Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx",
+      "sha256": "787c801f7dc593da33ece573cc8e9abf2179d98283f4592fa5bf85586e7eba49"
+    },
+    {
+      "role": "high matrix",
+      "file": "GovRAMP Service Provider Package – High Impact/High Impact SP Package/1_OCM/GovRAMP-Controls-Matrix_High_Rev5_V1.0.xlsx",
+      "sha256": "30059c670a2d80b3c49e3575d57f7d15299846aac9b4a5133c5d15ea062cddd2"
+    },
+    {
+      "role": "moderate+CJIS matrix",
+      "file": "GovRAMP Service Provider Package – Moderate Impact with CJIS Overlay/Moderate Impact SP Package-CJIS/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.11_01302026_CJIS.xlsx",
+      "sha256": "2991324440063585fb34cab70d235006bca7bd934ccd1e91c5dcde4146fa8913"
+    },
+    {
+      "role": "core workbook",
+      "file": "GovRAMP Core Controls.xlsx",
+      "sha256": "da898538b9c198a373c50ad339cefab42fdd3899bfc9fe2dd0de0ddcd4c51960"
+    },
+    {
+      "role": "ready workbook",
+      "file": "GovRAMP Ready Minimum Mandatory Requirements for Moderate and High Impact Levels.xlsx",
+      "sha256": "94076cb17bd58870881bc039385b7a2f6ccc12419d2d5be3e9e902b12725a6af"
+    },
+    {
+      "role": "federal overlay",
+      "file": "GovRAMP Federal Overlay.xlsx",
+      "sha256": "c0823d60970acb0ae69121211069ba89f293ec377a1647e7bee1e15a9fe04196"
+    },
+    {
+      "role": "CJIS overlay",
+      "file": "GovRAMP CJIS-Aligned Overlay Control and Parameters.xlsx",
+      "sha256": "8f4890637ea20fec416da46adddfe077d752cbb4e2d8adc145564bab6a7b4acd"
+    }
+  ],
+  "profiles": [
+    {
+      "key": "govramp-low",
+      "file": "profiles/govramp-low.json",
+      "controls_selected": 153,
+      "set_parameters": 174,
+      "notes": 69,
+      "sources": [
+        "GovRAMP Service Provider Package – Low Impact/GovRAMP_Low-Impact-SP-Package/Low-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Low_Rev5_V1.05.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-moderate",
+      "file": "profiles/govramp-moderate.json",
+      "controls_selected": 319,
+      "set_parameters": 250,
+      "notes": 106,
+      "sources": [
+        "GovRAMP Service Provider Package – Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-high",
+      "file": "profiles/govramp-high.json",
+      "controls_selected": 406,
+      "set_parameters": 285,
+      "notes": 120,
+      "sources": [
+        "GovRAMP Service Provider Package – High Impact/High Impact SP Package/1_OCM/GovRAMP-Controls-Matrix_High_Rev5_V1.0.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-core",
+      "file": "profiles/govramp-core.json",
+      "controls_selected": 60,
+      "set_parameters": 0,
+      "notes": 0,
+      "sources": [
+        "GovRAMP Service Provider Package – Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx",
+        "GovRAMP Core Controls.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-ready-low",
+      "file": "profiles/govramp-ready-low.json",
+      "controls_selected": 29,
+      "set_parameters": 0,
+      "notes": 0,
+      "sources": [
+        "GovRAMP Service Provider Package – Low Impact/GovRAMP_Low-Impact-SP-Package/Low-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Low_Rev5_V1.05.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-ready-moderate",
+      "file": "profiles/govramp-ready-moderate.json",
+      "controls_selected": 80,
+      "set_parameters": 0,
+      "notes": 0,
+      "sources": [
+        "GovRAMP Service Provider Package – Moderate Impact/Moderate-Impact-SP-Package/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.06.xlsx",
+        "GovRAMP Ready Minimum Mandatory Requirements for Moderate and High Impact Levels.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-ready-high",
+      "file": "profiles/govramp-ready-high.json",
+      "controls_selected": 90,
+      "set_parameters": 0,
+      "notes": 0,
+      "sources": [
+        "GovRAMP Service Provider Package – High Impact/High Impact SP Package/1_OCM/GovRAMP-Controls-Matrix_High_Rev5_V1.0.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-moderate-cjis",
+      "file": "profiles/govramp-moderate-cjis.json",
+      "controls_selected": 332,
+      "set_parameters": 538,
+      "notes": 136,
+      "sources": [
+        "GovRAMP Service Provider Package – Moderate Impact with CJIS Overlay/Moderate Impact SP Package-CJIS/1_OCM/GovRAMP-Controls-Matrix_Mod_Rev5_V1.11_01302026_CJIS.xlsx",
+        "GovRAMP CJIS-Aligned Overlay Control and Parameters.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-low-federal",
+      "file": "profiles/govramp-low-federal.json",
+      "controls_selected": 0,
+      "set_parameters": 2,
+      "notes": 3,
+      "sources": [
+        "GovRAMP Federal Overlay.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-moderate-federal",
+      "file": "profiles/govramp-moderate-federal.json",
+      "controls_selected": 2,
+      "set_parameters": 8,
+      "notes": 13,
+      "sources": [
+        "GovRAMP Federal Overlay.xlsx"
+      ]
+    },
+    {
+      "key": "govramp-high-federal",
+      "file": "profiles/govramp-high-federal.json",
+      "controls_selected": 2,
+      "set_parameters": 9,
+      "notes": 23,
+      "sources": [
+        "GovRAMP Federal Overlay.xlsx"
+      ]
+    }
+  ],
+  "mapping": {
+    "govramp-low": {
+      "entries": 148,
+      "fan-out": 23,
+      "method:choice-match": 1,
+      "method:label-aware": 25,
+      "method:locator": 110,
+      "method:ordinal": 31,
+      "method:sole-parameter": 7,
+      "params": 174,
+      "reason:refers-to-requirements": 4
+    },
+    "govramp-moderate": {
+      "entries": 213,
+      "fan-out": 41,
+      "method:choice-match": 1,
+      "method:control-order": 3,
+      "method:label-aware": 26,
+      "method:locator": 128,
+      "method:ordinal": 72,
+      "method:sole-parameter": 20,
+      "params": 250,
+      "reason:ordinal-out-of-range": 1,
+      "reason:refers-to-requirements": 5
+    },
+    "govramp-high": {
+      "entries": 248,
+      "fan-out": 47,
+      "method:choice-match": 1,
+      "method:control-order": 3,
+      "method:label-aware": 26,
+      "method:locator": 132,
+      "method:ordinal": 85,
+      "method:sole-parameter": 38,
+      "params": 285,
+      "reason:no-locator-multi": 1,
+      "reason:ordinal-out-of-range": 1,
+      "reason:refers-to-requirements": 5,
+      "reason:unparsed": 2
+    },
+    "govramp-moderate-cjis": {
+      "entries": 476,
+      "fan-out": 133,
+      "method:cjis-subitem": 8,
+      "method:control-order": 2,
+      "method:label-aware": 39,
+      "method:locator": 216,
+      "method:ordinal": 211,
+      "method:sole-parameter": 63,
+      "params": 539,
+      "reason:conflict": 3,
+      "reason:count-mismatch": 4,
+      "reason:locator-not-found": 3,
+      "reason:ordinal-out-of-range": 3,
+      "reason:unparsed": 3
+    },
+    "govramp-low-federal": {
+      "entries": 2,
+      "method:locator": 1,
+      "method:sole-parameter": 1,
+      "params": 2
+    },
+    "govramp-moderate-federal": {
+      "entries": 8,
+      "fan-out": 2,
+      "method:locator": 6,
+      "method:ordinal": 2,
+      "method:sole-parameter": 2,
+      "params": 10
+    },
+    "govramp-high-federal": {
+      "entries": 14,
+      "fan-out": 4,
+      "method:locator": 12,
+      "method:ordinal": 4,
+      "method:sole-parameter": 2,
+      "params": 18
+    }
+  },
+  "unmapped": [
+    {
+      "profile": "govramp-low",
+      "control": "ac-8",
+      "locator": "a",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "AC-8 (a) [see additional Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-low",
+      "control": "ac-8",
+      "locator": "c.1",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "AC-8 (c) (1) [see additional Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-low",
+      "control": "ir-8",
+      "locator": "b",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "IR-8 (b) [see additional GovRAMP Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-low",
+      "control": "ir-8",
+      "locator": "d",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "IR-8 (d) [see additional GovRAMP Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-moderate",
+      "control": "ac-8",
+      "locator": "a",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "AC-8 (a) [see additional Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-moderate",
+      "control": "ac-8",
+      "locator": "c.1",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "AC-8 (c) (1) [see additional Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-moderate",
+      "control": "ir-8",
+      "locator": "b",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "IR-8 (b) [see additional GovRAMP Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-moderate",
+      "control": "ir-8",
+      "locator": "d",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "IR-8 (d) [see additional GovRAMP Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-moderate",
+      "control": "mp-4",
+      "locator": "a-2",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "MP-4 (a)-2 [see additional GovRAMP requirements and guidance]"
+    },
+    {
+      "profile": "govramp-moderate",
+      "control": "si-7.1",
+      "locator": "-3",
+      "reason": "ordinal-out-of-range",
+      "reason_text": "the -n suffix is larger than the number of blanks available",
+      "text": "SI-7 (1)-3 [at least monthly]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "ac-8",
+      "locator": "a",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "AC-8 (a) [see additional Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "ac-8",
+      "locator": "c.1",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "AC-8 (c) (1) [see additional Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "ca-2.2",
+      "locator": "",
+      "reason": "no-locator-multi",
+      "reason_text": "no locator, and the values do not fit the control's unassigned blanks one-to-one",
+      "text": "CA-2 (2) [at least annually]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "cm-3.6",
+      "locator": "",
+      "reason": "unparsed",
+      "reason_text": "no bracketed values could be read from the entry",
+      "text": "CM-3 (6) All security safeguards that rely on cryptography"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "ir-8",
+      "locator": "b",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "IR-8 (b) [see additional GovRAMP Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "ir-8",
+      "locator": "d",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "IR-8 (d) [see additional GovRAMP Requirements and Guidance]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "mp-4",
+      "locator": "a-2",
+      "reason": "refers-to-requirements",
+      "reason_text": "the value only points to the additional requirements text",
+      "text": "MP-4 (a)-2 [see additional GovRAMP requirements and guidance]"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "sa-4.5",
+      "locator": "",
+      "reason": "unparsed",
+      "reason_text": "no bracketed values could be read from the entry",
+      "text": "SA-4 (5) (a) The service provider shall use the DoD STIGs to establish configuration settings; Center for Internet Security up to Level 2 (CIS Level 2) guidelines shall be used if STIGs are not available; Custom baselines shall be used if C"
+    },
+    {
+      "profile": "govramp-high",
+      "control": "si-7.1",
+      "locator": "-3",
+      "reason": "ordinal-out-of-range",
+      "reason_text": "the -n suffix is larger than the number of blanks available",
+      "text": "SI-7 (1)-3 [at least monthly]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ac-20.2",
+      "locator": "",
+      "reason": "unparsed",
+      "reason_text": "no bracketed values could be read from the entry",
+      "text": "Control required, but no organization-defined restrictions provided."
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ca-3",
+      "locator": "a-2",
+      "reason": "ordinal-out-of-range",
+      "reason_text": "the -n suffix is larger than the number of blanks available",
+      "text": "CA-3 (a)-2 [Executed CJIS User Agreements, Criminal Justice Agency User Agreements, Agreements for Noncriminal Justice Use of CHRI] SEE full details in pages 58-61 in CJIS V6.0"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ca-7",
+      "locator": "b",
+      "reason": "count-mismatch",
+      "reason_text": "number of values differs from number of blanks at that locator",
+      "text": "CA-7 (b) [an ongoing frequency for monitoring and an ongoing frequency for assessment of control effectiveness]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "cm-2",
+      "locator": "c.1",
+      "reason": "locator-not-found",
+      "reason_text": "the locator does not match any labelled statement item",
+      "text": "CM-2 (c) (1) [At least annually]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "cm-2",
+      "locator": "c.2",
+      "reason": "locator-not-found",
+      "reason_text": "the locator does not match any labelled statement item",
+      "text": "CM-2 (c) (2) [When required due to security-relevant changes to the system and/or security incidents occur] [to include when directed by the SAC]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ir-2",
+      "locator": "b.1",
+      "reason": "locator-not-found",
+      "reason_text": "the locator does not match any labelled statement item",
+      "text": "IR-2 (b) (1) [at least annually]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ps-1",
+      "locator": "a-1",
+      "reason": "conflict",
+      "reason_text": "the target parameter was already assigned by an earlier entry",
+      "text": "PS-1 (a)-1 [Agency-level]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ps-1",
+      "locator": "c-1",
+      "reason": "conflict",
+      "reason_text": "the target parameter was already assigned by an earlier entry",
+      "text": "PS-1 (c)-1 (2) [assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "ps-1",
+      "locator": "c.2",
+      "reason": "count-mismatch",
+      "reason_text": "number of values differs from number of blanks at that locator",
+      "text": "PS-1 (c) (2) [at least annually] [assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines] [significant changes]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "sa-9",
+      "locator": "",
+      "reason": "unparsed",
+      "reason_text": "no bracketed values could be read from the entry",
+      "text": "SA-9 (a) [Appropriate GovRAMP Security Controls Baseline(s) if State information is processed or stored within the external system, and system and services acquisition security controls in accordance with the CJISSECPOL including the agreem"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "si-2",
+      "locator": "",
+      "reason": "unparsed",
+      "reason_text": "no bracketed values could be read from the entry",
+      "text": "[15 days for critical, and within thirty (30) days of release of updates for all other impact levels]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "sr-1",
+      "locator": "a",
+      "reason": "conflict",
+      "reason_text": "the target parameter was already assigned by an earlier entry",
+      "text": "SR-1 (a) 1 [Agency-level]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "sr-1",
+      "locator": "c",
+      "reason": "count-mismatch",
+      "reason_text": "number of values differs from number of blanks at that locator",
+      "text": "SR-1 (c) 1-1 [any security incidents involving unauthorized access to CJI or systems used to process, store, or transmit CJI]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "sr-1",
+      "locator": "c",
+      "reason": "count-mismatch",
+      "reason_text": "number of values differs from number of blanks at that locator",
+      "text": "SR-1 (c) 2-2 [any security incidents involving unauthorized access to CJI or systems used to process, store, or transmit CJI]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "sr-10",
+      "locator": "-2",
+      "reason": "ordinal-out-of-range",
+      "reason_text": "the -n suffix is larger than the number of blanks available",
+      "text": "SR-8-2 [systems used to process, store, or transmit CJI]"
+    },
+    {
+      "profile": "govramp-moderate-cjis",
+      "control": "sr-8",
+      "locator": "-2",
+      "reason": "ordinal-out-of-range",
+      "reason_text": "the -n suffix is larger than the number of blanks available",
+      "text": "SR-8-2 [systems used to process, store, or transmit CJI]"
+    }
+  ],
+  "checks": {
+    "moderate_matrix_copies": {
+      "files": 2,
+      "identical": true,
+      "note": "the Moderate matrix appears at the folder root and in the service-provider package"
+    },
+    "matrix:low": {
+      "controls_in_matrix": 153,
+      "authorized": 153,
+      "ready": 29,
+      "id_corrections": [],
+      "ids_not_in_nist_catalog": [],
+      "non_nist_rows_kept_as_notes": [],
+      "not_selected": []
+    },
+    "matrix:moderate": {
+      "controls_in_matrix": 319,
+      "authorized": 319,
+      "ready": 80,
+      "id_corrections": [],
+      "ids_not_in_nist_catalog": [],
+      "non_nist_rows_kept_as_notes": [],
+      "not_selected": []
+    },
+    "matrix:high": {
+      "controls_in_matrix": 406,
+      "authorized": 406,
+      "ready": 90,
+      "id_corrections": [],
+      "ids_not_in_nist_catalog": [],
+      "non_nist_rows_kept_as_notes": [],
+      "not_selected": []
+    },
+    "matrix:moderate-cjis": {
+      "controls_in_matrix": 334,
+      "authorized": 332,
+      "ready": 80,
+      "id_corrections": [
+        "SC-7 (23) -> sc-7.24 (SORT ID column)"
+      ],
+      "ids_not_in_nist_catalog": [],
+      "non_nist_rows_kept_as_notes": [
+        "IA-0",
+        "IA-5 (j)",
+        "IA-5 (k)",
+        "IA-5 (l)",
+        "IA-5 (m)",
+        "IA-5 (n)",
+        "IA-5 (o)"
+      ],
+      "not_selected": [
+        "sa-4.10",
+        "sa-8.33"
+      ]
+    },
+    "federal-overlay:low": {
+      "tabs_applied": [
+        "low"
+      ],
+      "rows_used": 2,
+      "controls_added": []
+    },
+    "federal-overlay:moderate": {
+      "tabs_applied": [
+        "low",
+        "moderate"
+      ],
+      "rows_used": 11,
+      "controls_added": [
+        "ia-2.12",
+        "ia-8.1"
+      ]
+    },
+    "federal-overlay:high": {
+      "tabs_applied": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "rows_used": 19,
+      "controls_added": [
+        "ia-2.12",
+        "ia-8.1"
+      ]
+    },
+    "core_matrix_vs_core_workbook": {
+      "matrix": 60,
+      "workbook": 60,
+      "differences": []
+    },
+    "ready_matrix_vs_ready_workbook": {
+      "matrix": 80,
+      "workbook": 80,
+      "differences": []
+    },
+    "cjis_matrix_vs_cjis_overlay_workbook": {
+      "matrix": 334,
+      "workbook": 332,
+      "only_in_matrix": [
+        "sa-4.10",
+        "sa-8.33"
+      ],
+      "only_in_overlay_workbook": []
+    },
+    "fedramp_corroboration": {
+      "govramp_parameters": 250,
+      "fedramp_parameters": 236,
+      "set_by_both": 202,
+      "same_wording_on_same_id": 185,
+      "different_wording_on_same_id": 17,
+      "wording_matches_another_parameter_and_fedramp_leaves_ours_unset": [
+        "at-02_odp.01",
+        "at-02_odp.02",
+        "pe-14_odp.02",
+        "pl-04_odp.03",
+        "ra-03_odp.02",
+        "ra-05.02_odp.02",
+        "sc-07.05_odp.02",
+        "si-03_odp.05"
+      ],
+      "wording_matches_another_parameter_and_fedramp_has_different_value_here": [],
+      "different_wording_ids": [
+        "ac-02.02_odp.01",
+        "ac-02.03_odp.02",
+        "au-11_odp",
+        "ca-02.03_odp.01",
+        "ca-02.03_odp.03",
+        "ca-02_odp.02",
+        "ca-03_odp.03",
+        "ca-06_odp",
+        "cm-02_odp.02",
+        "cm-12.01_odp.01",
+        "pe-03_odp.02",
+        "sa-09.02_odp",
+        "sa-09_odp.01",
+        "sa-09_odp.02",
+        "sa-15_odp.02",
+        "sc-12_odp",
+        "sc-13_odp.02"
+      ]
+    },
+    "graph_resolution": [
+      {
+        "key": "govramp-low",
+        "resolved_controls": 153,
+        "resolved_parameters": 174,
+        "controls_with_notes": 48,
+        "notes": 69
+      },
+      {
+        "key": "govramp-moderate",
+        "resolved_controls": 319,
+        "resolved_parameters": 250,
+        "controls_with_notes": 81,
+        "notes": 106
+      },
+      {
+        "key": "govramp-high",
+        "resolved_controls": 406,
+        "resolved_parameters": 285,
+        "controls_with_notes": 94,
+        "notes": 120
+      },
+      {
+        "key": "govramp-core",
+        "resolved_controls": 60,
+        "resolved_parameters": 37,
+        "controls_with_notes": 24,
+        "notes": 38
+      },
+      {
+        "key": "govramp-ready-low",
+        "resolved_controls": 29,
+        "resolved_parameters": 36,
+        "controls_with_notes": 17,
+        "notes": 29
+      },
+      {
+        "key": "govramp-ready-moderate",
+        "resolved_controls": 80,
+        "resolved_parameters": 57,
+        "controls_with_notes": 30,
+        "notes": 46
+      },
+      {
+        "key": "govramp-ready-high",
+        "resolved_controls": 90,
+        "resolved_parameters": 58,
+        "controls_with_notes": 27,
+        "notes": 42
+      },
+      {
+        "key": "govramp-moderate-cjis",
+        "resolved_controls": 332,
+        "resolved_parameters": 538,
+        "controls_with_notes": 96,
+        "notes": 135
+      },
+      {
+        "key": "govramp-low-federal",
+        "resolved_controls": 153,
+        "resolved_parameters": 174,
+        "controls_with_notes": 48,
+        "notes": 72
+      },
+      {
+        "key": "govramp-moderate-federal",
+        "resolved_controls": 321,
+        "resolved_parameters": 253,
+        "controls_with_notes": 83,
+        "notes": 116
+      },
+      {
+        "key": "govramp-high-federal",
+        "resolved_controls": 408,
+        "resolved_parameters": 288,
+        "controls_with_notes": 97,
+        "notes": 131
+      }
+    ],
+    "federal_overlay_vs_published_fedramp_membership": {
+      "low": {
+        "govramp_federal": 153,
+        "fedramp": 156,
+        "common": 153,
+        "only_govramp_federal": [],
+        "only_fedramp": [
+          "ia-2.12",
+          "ia-8.1",
+          "sa-4.10"
+        ]
+      },
+      "moderate": {
+        "govramp_federal": 321,
+        "fedramp": 323,
+        "common": 321,
+        "only_govramp_federal": [],
+        "only_fedramp": [
+          "ca-8.2",
+          "sa-4.10"
+        ]
+      },
+      "high": {
+        "govramp_federal": 408,
+        "fedramp": 410,
+        "common": 408,
+        "only_govramp_federal": [],
+        "only_fedramp": [
+          "ca-8.2",
+          "sa-4.10"
+        ]
+      }
+    },
+    "graph_warnings": []
+  },
+  "warnings": []
+}

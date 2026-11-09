@@ -1,0 +1,255 @@
+{
+  "catalog": {
+    "uuid": "507e994c-efcf-53be-a1e9-ca78eff2487c",
+    "metadata": {
+      "title": "NIST SP 800-53 Rev. 5.2 (seed excerpt)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "5.2.0-seed",
+      "oscal-version": "1.1.3",
+      "remarks": "SEED DATA: abbreviated paraphrase for offline development and tests, not the official text. Run src/scripts/ingest_catalogs.py to replace with the published OSCAL content."
+    },
+    "groups": [
+      {
+        "id": "ac",
+        "class": "family",
+        "title": "Access Control",
+        "controls": [
+          {
+            "id": "ac-1",
+            "title": "Policy and Procedures",
+            "class": "SP800-53",
+            "params": [
+              {
+                "id": "ac-01_odp.01",
+                "label": "personnel or roles"
+              }
+            ],
+            "parts": [
+              {
+                "id": "ac-1_smt",
+                "name": "statement",
+                "prose": "Develop, document, and distribute an access control policy and procedures to {{ insert: param, ac-01_odp.01 }}, and review them on a defined schedule."
+              },
+              {
+                "id": "ac-1_gdn",
+                "name": "guidance",
+                "prose": "Access control policy and procedures address the controls in the AC family."
+              }
+            ]
+          },
+          {
+            "id": "ac-2",
+            "title": "Account Management",
+            "class": "SP800-53",
+            "params": [
+              {
+                "id": "ac-02_odp.01",
+                "label": "system account types"
+              },
+              {
+                "id": "ac-02_odp.03",
+                "label": "time period for account-disable notification"
+              }
+            ],
+            "parts": [
+              {
+                "id": "ac-2_smt",
+                "name": "statement",
+                "prose": "Define the types of system accounts allowed: {{ insert: param, ac-02_odp.01 }}. Assign account managers, require approvals, and monitor account use."
+              },
+              {
+                "id": "ac-2_gdn",
+                "name": "guidance",
+                "prose": "Account types include individual, shared, group, system, guest, and temporary accounts."
+              }
+            ],
+            "controls": [
+              {
+                "id": "ac-2.1",
+                "title": "Automated System Account Management",
+                "parts": [
+                  {
+                    "id": "ac-2.1_smt",
+                    "name": "statement",
+                    "prose": "Support the management of system accounts using automated mechanisms."
+                  },
+                  {
+                    "id": "ac-2.1_gdn",
+                    "name": "guidance",
+                    "prose": "Automated mechanisms include email or text notifications and automatic disabling of inactive accounts."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ac-6",
+            "title": "Least Privilege",
+            "class": "SP800-53",
+            "parts": [
+              {
+                "id": "ac-6_smt",
+                "name": "statement",
+                "prose": "Allow only authorized accesses for users and processes that are necessary to accomplish assigned organizational tasks."
+              },
+              {
+                "id": "ac-6_gdn",
+                "name": "guidance",
+                "prose": "Least privilege applies to privileged and non-privileged accounts."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "au",
+        "class": "family",
+        "title": "Audit and Accountability",
+        "controls": [
+          {
+            "id": "au-2",
+            "title": "Event Logging",
+            "class": "SP800-53",
+            "params": [
+              {
+                "id": "au-02_odp.01",
+                "label": "event types"
+              }
+            ],
+            "parts": [
+              {
+                "id": "au-2_smt",
+                "name": "statement",
+                "prose": "Identify the types of events the system can log: {{ insert: param, au-02_odp.01 }}. Coordinate the logging function with other entities needing audit information."
+              },
+              {
+                "id": "au-2_gdn",
+                "name": "guidance",
+                "prose": "An event is an observable occurrence in a system. Logging supports incident response and accountability."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ia",
+        "class": "family",
+        "title": "Identification and Authentication",
+        "controls": [
+          {
+            "id": "ia-2",
+            "title": "Identification and Authentication (Organizational Users)",
+            "class": "SP800-53",
+            "parts": [
+              {
+                "id": "ia-2_smt",
+                "name": "statement",
+                "prose": "Uniquely identify and authenticate organizational users and associate that identification with processes acting on their behalf."
+              },
+              {
+                "id": "ia-2_gdn",
+                "name": "guidance",
+                "prose": "Organizational users include employees and individuals the organization treats as employees."
+              }
+            ],
+            "controls": [
+              {
+                "id": "ia-2.1",
+                "title": "Multi-factor Authentication to Privileged Accounts",
+                "parts": [
+                  {
+                    "id": "ia-2.1_smt",
+                    "name": "statement",
+                    "prose": "Implement multi-factor authentication for access to privileged accounts."
+                  },
+                  {
+                    "id": "ia-2.1_gdn",
+                    "name": "guidance",
+                    "prose": "Multi-factor authentication combines two or more different authentication factors."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ra",
+        "class": "family",
+        "title": "Risk Assessment",
+        "controls": [
+          {
+            "id": "ra-3",
+            "title": "Risk Assessment",
+            "class": "SP800-53",
+            "params": [
+              {
+                "id": "ra-03_odp.01",
+                "label": "frequency"
+              }
+            ],
+            "parts": [
+              {
+                "id": "ra-3_smt",
+                "name": "statement",
+                "prose": "Conduct a risk assessment, document the results, and update the assessment {{ insert: param, ra-03_odp.01 }}."
+              },
+              {
+                "id": "ra-3_gdn",
+                "name": "guidance",
+                "prose": "Risk assessments consider threats, vulnerabilities, likelihood, and impact."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sc",
+        "class": "family",
+        "title": "System and Communications Protection",
+        "controls": [
+          {
+            "id": "sc-7",
+            "title": "Boundary Protection",
+            "class": "SP800-53",
+            "parts": [
+              {
+                "id": "sc-7_smt",
+                "name": "statement",
+                "prose": "Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces."
+              },
+              {
+                "id": "sc-7_gdn",
+                "name": "guidance",
+                "prose": "Managed interfaces include gateways, routers, firewalls, and encrypted tunnels."
+              }
+            ]
+          },
+          {
+            "id": "sc-28",
+            "title": "Protection of Information at Rest",
+            "class": "SP800-53",
+            "params": [
+              {
+                "id": "sc-28_odp.01",
+                "label": "information at rest"
+              }
+            ],
+            "parts": [
+              {
+                "id": "sc-28_smt",
+                "name": "statement",
+                "prose": "Protect the confidentiality and integrity of {{ insert: param, sc-28_odp.01 }} at rest."
+              },
+              {
+                "id": "sc-28_gdn",
+                "name": "guidance",
+                "prose": "Information at rest is information located on a storage device in a system."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

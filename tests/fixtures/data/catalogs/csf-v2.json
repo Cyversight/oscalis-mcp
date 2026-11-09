@@ -1,0 +1,143 @@
+{
+  "catalog": {
+    "uuid": "d5557590-bd14-576e-87cf-1f07030b5100",
+    "metadata": {
+      "title": "NIST Cybersecurity Framework 2.0 (seed excerpt)",
+      "last-modified": "2026-11-04T00:00:00Z",
+      "version": "2.0-seed",
+      "oscal-version": "1.1.3",
+      "remarks": "SEED DATA: abbreviated paraphrase for offline development and tests, not the official text. Run src/scripts/ingest_catalogs.py to replace with the published OSCAL content."
+    },
+    "groups": [
+      {
+        "id": "GV",
+        "class": "function",
+        "title": "GOVERN",
+        "controls": [
+          {
+            "id": "GV.PO",
+            "title": "Policy",
+            "class": "category",
+            "controls": [
+              {
+                "id": "GV.PO-01",
+                "title": "GV.PO-01",
+                "parts": [
+                  {
+                    "id": "GV.PO-01_smt",
+                    "name": "statement",
+                    "prose": "Policy for managing cybersecurity risks is established, communicated, and enforced."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ID",
+        "class": "function",
+        "title": "IDENTIFY",
+        "controls": [
+          {
+            "id": "ID.AM",
+            "title": "Asset Management",
+            "class": "category",
+            "controls": [
+              {
+                "id": "ID.AM-01",
+                "title": "ID.AM-01",
+                "parts": [
+                  {
+                    "id": "ID.AM-01_smt",
+                    "name": "statement",
+                    "prose": "Inventories of hardware managed by the organization are maintained."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PR",
+        "class": "function",
+        "title": "PROTECT",
+        "controls": [
+          {
+            "id": "PR.AA",
+            "title": "Identity Management, Authentication, and Access Control",
+            "class": "category",
+            "controls": [
+              {
+                "id": "PR.AA-01",
+                "title": "PR.AA-01",
+                "parts": [
+                  {
+                    "id": "PR.AA-01_smt",
+                    "name": "statement",
+                    "prose": "Identities and credentials for authorized users, services, and hardware are managed."
+                  }
+                ]
+              },
+              {
+                "id": "PR.AA-05",
+                "title": "PR.AA-05",
+                "parts": [
+                  {
+                    "id": "PR.AA-05_smt",
+                    "name": "statement",
+                    "prose": "Access permissions and authorizations are defined and managed, incorporating least privilege."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "PR.DS",
+            "title": "Data Security",
+            "class": "category",
+            "controls": [
+              {
+                "id": "PR.DS-01",
+                "title": "PR.DS-01",
+                "parts": [
+                  {
+                    "id": "PR.DS-01_smt",
+                    "name": "statement",
+                    "prose": "The confidentiality, integrity, and availability of data-at-rest are protected."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DE",
+        "class": "function",
+        "title": "DETECT",
+        "controls": [
+          {
+            "id": "DE.CM",
+            "title": "Continuous Monitoring",
+            "class": "category",
+            "controls": [
+              {
+                "id": "DE.CM-01",
+                "title": "DE.CM-01",
+                "parts": [
+                  {
+                    "id": "DE.CM-01_smt",
+                    "name": "statement",
+                    "prose": "Networks and network services are monitored to find potentially adverse events."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
